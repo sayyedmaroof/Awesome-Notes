@@ -43,7 +43,7 @@ function showNotes() {
         html += `
         
         <div class="container">
-            <article class="card card--rotated">
+            <article class="card card--rotated note-card">
                 <span><strong>Added:</strong> ${element.date}</span>
                 <h4>Note number ${index + 1}</h4>
                 <h3 class="card__title">${(element.title)}</h3>

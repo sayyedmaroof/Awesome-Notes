@@ -196,8 +196,8 @@ body {
 }
 
 .card__title {
-    font-size: 1.5rem;
-    line-height: 2.5rem;
+    font-size: 1.2rem;
+    /* line-height: 2rem; */
     margin: 0.5rem 0;
     border: none;
 }
@@ -230,7 +230,7 @@ body {
     top: 0;
     left: 0;
     z-index: -1;
-    transform: rotate(10deg);
+    transform: rotate(6deg);
 }
 
 .card span {
