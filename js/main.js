@@ -43,7 +43,7 @@ function showNotes() {
         html += `
         
         <div class="container">
-            <article class="card card--rotated note-card">
+            <article class="card card--rotated">
                 <span><strong>Added:</strong> ${element.date}</span>
                 <h4>Note number ${index + 1}</h4>
                 <h3 class="card__title">${(element.title)}</h3>
@@ -65,11 +65,7 @@ function showNotes() {
     else {
         notes.innerHTML = html;
     }
-
-    console.log(notesArr, notesStorage);
-
 }
-
 
 // to delete a note 
 function deleteNote(index) {
@@ -90,8 +86,8 @@ function deleteNote(index) {
 let searchInput = document.getElementById("searchInput");
 searchInput.addEventListener("input", function () {
     let inputVal = searchInput.value;
-    console.log("input event fired", inputVal);
-    let noteCards = document.getElementsByClassName("note-card");
+    // console.log("input event fired", inputVal);
+    let noteCards = document.getElementsByClassName("container");
     Array.from(noteCards).forEach(element => {
         let cardTxt = element.getElementsByTagName("p")[0].innerText;
         if (cardTxt.includes(inputVal)) {
@@ -100,7 +96,6 @@ searchInput.addEventListener("input", function () {
         else {
             element.style.display = "none";
         }
-
     });
 })
 
