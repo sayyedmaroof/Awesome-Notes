@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Awesome JS Notes App</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
+</head>
+<body>
+    <nav id="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <h2>
+                    Awesome Notes
+                </h2>
+            </div>
+
+            <div class="search-bar">
+                <form action="" method="post">
+                    <input type="search" name="" id="searchInput" placeholder="search notes">
+                </form>
+            </div>
+        </div>
+    </nav>
+    <main class="main-container">
+
+        <h1 class="heading">Welcome To Awesome Notes</h1>
+        <div class="add-notes-bar">
+            <h2>
+                Add A Note
+            </h2>
+            <input type="text" id="addTitle" placeholder="note title">
+            <textarea id="addTxt" placeholder="add note text here"></textarea>
+            <button id="addBtn">Add Note</button>
+        </div>
+        <div class="notes-container">
+
+            <h2>
+                Your Notes
+            </h2>
+            <section id="notes" class="wrapper">
+
+            </section>
+        </div>
+    </main>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
